@@ -4,24 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Russtory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/dist/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__row row"></div>
+            <div class="header__row row">
+                <a href="#" class="header__logo">
+                    <img src="assets/image/logo.png" alt="">
+                    <p>Русстори</p>
+                </a>
+                <ul class="header__menu">
+                    <li><button class="header__menu-item">Главная</button></li>
+                    <li><button class="header__menu-item">О проекте</button></li>
+                    <li><button class="header__menu-item">Наши выставки</button></li>
+                    <li><button class="header__menu-item">Отзывы</button></li>
+                    <li><button class="header__menu-item">Для кого</button></li>
+                </ul>
+                <button class="header__button button"><span>Задать вопрос</span></button>
+            </div>
         </div>
     </header>
     <main class="main">
         <section class="info">
             <div class="container">
-                <div class="info__row row"></div>
+                <div class="info__row row">
+                    <div class="info__content">
+                        <h1 class="title">Иммерсивные исторические выставки для школ и детских садов</h1>
+                        <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
+                        <button class="button"><span>Получить презентцию программ</span></button>
+                    </div>
+                    <div class="info__img">
+                        <img src="assets/image/info__img.png" alt="">
+                    </div>
+                </div>
             </div>
         </section>
         <section class="plus">
             <div class="container">
-                <div class="plus__row row"></div>
+                <div class="plus__row row">
+                    <div class="plus__card">
+                        <h1 class="plus__title">2017</h1>
+                        <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
+                    </div>
+                    <div class="plus__card">
+                        <h1 class="plus__title">ФГОС</h1>
+                        <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
+                    </div>
+                    <div class="plus__card">
+                        <h1 class="plus__title">+10</h1>
+                        <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="about">
@@ -31,7 +69,22 @@
         </section>
         <section class="show">
             <div class="container">
-                <div class="show__row row"></div>
+                <div class="show__row row">
+                    <h1 class="title">Наши выставки</h1>
+                    <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
+                    <div class="show__wrapper">
+                        <div class="plus__card">
+                            <button class="button"><span>Подробнее</span></button>
+                        </div>
+                        <div class="plus__card">
+                            <button class="button"><span>Подробнее</span></button>
+                        </div>
+                        <div class="plus__card">
+                            <button class="button"><span>Подробнее</span></button>
+                        </div>
+                    </div>
+                    <a href="#" class="button"><span>Все выставки</span></a>
+                </div>
             </div>
         </section>
         <section class="thanks">
@@ -41,7 +94,27 @@
         </section>
         <section class="for">
             <div class="container">
-                <div class="for__row row"></div>
+                <div class="for__row row">
+                    <h1 class="title">Для кого подходят?</h1>
+                    <div class="for__content">
+                        <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
+                        <button class="button"><span>Связаться с нами</span></button>
+                    </div>
+                    <div class="for__wrapper">
+                        <div class="plus__card">
+                            <h1 class="plus__title">2017</h1>
+                            <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
+                        </div>
+                        <div class="plus__card">
+                            <h1 class="plus__title">ФГОС</h1>
+                            <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
+                        </div>
+                        <div class="plus__card">
+                            <h1 class="plus__title">+10</h1>
+                            <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -49,11 +122,68 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__row row">
-
+                <div class="footer__left">
+                    <h1 class="footer__title">Контакты</h1>
+                    <ul class="footer__social">
+                        <li>
+                            <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27 0H3C1.35 0 0.015 1.35 0.015 3L0 21C0 22.65 1.35 24 3 24H27C28.65 24 30 22.65 30 21V3C30 1.35 28.65 0 27 0ZM26.4 6.375L15.795 13.005C15.315 13.305 14.685 13.305 14.205 13.005L3.6 6.375C3.44959 6.29057 3.31788 6.17649 3.21283 6.03968C3.10779 5.90287 3.03159 5.74617 2.98886 5.57906C2.94613 5.41195 2.93775 5.2379 2.96423 5.06746C2.99072 4.89702 3.0515 4.73372 3.14292 4.58745C3.23434 4.44118 3.35449 4.31498 3.49609 4.21649C3.63769 4.118 3.79781 4.04927 3.96674 4.01445C4.13568 3.97963 4.30992 3.97945 4.47893 4.01392C4.64794 4.04839 4.8082 4.1168 4.95 4.215L15 10.5L25.05 4.215C25.1918 4.1168 25.3521 4.04839 25.5211 4.01392C25.6901 3.97945 25.8643 3.97963 26.0333 4.01445C26.2022 4.04927 26.3623 4.118 26.5039 4.21649C26.6455 4.31498 26.7657 4.44118 26.8571 4.58745C26.9485 4.73372 27.0093 4.89702 27.0358 5.06746C27.0622 5.2379 27.0539 5.41195 27.0111 5.57906C26.9684 5.74617 26.8922 5.90287 26.7872 6.03968C26.6821 6.17649 26.5504 6.29057 26.4 6.375Z" fill="#8F0E08" />
+                            </svg>
+                            <a href="mailto:prostiker.info@gmail.com">prostiker.info@gmail.com</a>
+                        </li>   
+                        <li>
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 0C23.2845 0 30 6.7155 30 15C30 23.2845 23.2845 30 15 30C12.3492 30.0046 9.7449 29.303 7.45502 27.9675L0.00602318 30L2.03402 22.548C0.697461 20.2574 -0.00462244 17.652 2.2903e-05 15C2.2903e-05 6.7155 6.71552 0 15 0ZM9.88802 7.95L9.58802 7.962C9.39406 7.97536 9.20454 8.02631 9.03002 8.112C8.86739 8.20427 8.71887 8.31945 8.58902 8.454C8.40902 8.6235 8.30702 8.7705 8.19752 8.913C7.64271 9.63435 7.34398 10.52 7.34852 11.43C7.35152 12.165 7.54352 12.8805 7.84352 13.5495C8.45702 14.9025 9.46652 16.335 10.7985 17.6625C11.1195 17.982 11.4345 18.303 11.7735 18.6015C13.4287 20.0586 15.4009 21.1095 17.5335 21.6705L18.3855 21.801C18.663 21.816 18.9405 21.795 19.2195 21.7815C19.6563 21.7585 20.0828 21.6402 20.469 21.435C20.6653 21.3335 20.857 21.2234 21.0435 21.105C21.0435 21.105 21.107 21.062 21.231 20.97C21.4335 20.82 21.558 20.7135 21.726 20.538C21.852 20.408 21.957 20.257 22.041 20.085C22.158 19.8405 22.275 19.374 22.323 18.9855C22.359 18.6885 22.3485 18.5265 22.344 18.426C22.338 18.2655 22.2045 18.099 22.059 18.0285L21.186 17.637C21.186 17.637 19.881 17.0685 19.083 16.7055C18.9995 16.6691 18.91 16.6483 18.819 16.644C18.7164 16.6333 18.6126 16.6447 18.5148 16.6776C18.417 16.7105 18.3274 16.764 18.252 16.8345C18.2445 16.8315 18.144 16.917 17.0595 18.231C16.9973 18.3146 16.9115 18.3779 16.8132 18.4126C16.7149 18.4473 16.6085 18.452 16.5075 18.426C16.4098 18.3999 16.314 18.3669 16.221 18.327C16.035 18.249 15.9705 18.219 15.843 18.165C14.9818 17.7899 14.1847 17.2822 13.4805 16.6605C13.2915 16.4955 13.116 16.3155 12.936 16.1415C12.3459 15.5763 11.8316 14.937 11.406 14.2395L11.3175 14.097C11.2549 14.0007 11.2036 13.8975 11.1645 13.7895C11.1075 13.569 11.256 13.392 11.256 13.392C11.256 13.392 11.6205 12.993 11.79 12.777C11.955 12.567 12.0945 12.363 12.1845 12.2175C12.3615 11.9325 12.417 11.64 12.324 11.4135C11.904 10.3875 11.47 9.367 11.022 8.352C10.9335 8.151 10.671 8.007 10.4325 7.9785C10.3515 7.9685 10.2705 7.9605 10.1895 7.9545C9.98812 7.94295 9.78616 7.94495 9.58502 7.9605L9.88802 7.95Z" fill="#8F0E08" />
+                            </svg>
+                            <a href="#">What’s App</a>
+                        </li>   
+                        <li>
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 0C6.72 0 0 6.72 0 15C0 23.28 6.72 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0ZM21.96 10.2C21.735 12.57 20.76 18.33 20.265 20.985C20.055 22.11 19.635 22.485 19.245 22.53C18.375 22.605 17.715 21.96 16.875 21.405C15.555 20.535 14.805 19.995 13.53 19.155C12.045 18.18 13.005 17.64 13.86 16.77C14.085 16.545 17.925 13.05 18 12.735C18.0104 12.6873 18.009 12.6378 17.996 12.5907C17.9829 12.5437 17.9585 12.5005 17.925 12.465C17.835 12.39 17.715 12.42 17.61 12.435C17.475 12.465 15.375 13.86 11.28 16.62C10.68 17.025 10.14 17.235 9.66 17.22C9.12 17.205 8.1 16.92 7.335 16.665C6.39 16.365 5.655 16.2 5.715 15.675C5.745 15.405 6.12 15.135 6.825 14.85C11.205 12.945 14.115 11.685 15.57 11.085C19.74 9.345 20.595 9.045 21.165 9.045C21.285 9.045 21.57 9.075 21.75 9.225C21.9 9.345 21.945 9.51 21.96 9.63C21.945 9.72 21.975 9.99 21.96 10.2Z" fill="#8F0E08" />
+                            </svg>
+                            <a href="#">Telegram</a>
+                        </li>   
+                        <li>
+                            <a href="tel:79993333333">+7(999)-333-33-33</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__contact">
+                        <li><span>ИП: Калинин Георгий Иванович</span></li>
+                        <li><span>Дата регистрации:05.11.2023</span></li>
+                        <li><span>ОГРНИП: 325547600193173</span></li>
+                        <li><span>ИНН: 544600041090</span></li>
+                        <li><span>Код ОКВЭД: 85.41 (дополнительное образование детей и взрослых)</span></li>
+                    </ul>
+                </div>
+                <div class="footer__right">
+                    <h1 class="footer__title">Оставить заявку на проведение</h1>
+                    <h3 class="footer__subtitle">Ответим на любые интересующие вопросы</h3>
+                    <form class="footer__form" action="#">
+                        <input type="text" placeholder="Имя" required>
+                        <input type="tel" placeholder="+7 (999)-333-33-33" required>
+                        <button type="submit"><span>Отправить</span></button>
+                        <div class="footer__checkbox-group">
+                            <input class="footer__checkbox-input" type="checkbox" id="subscribe" required="">
+                            <label for="subscribe" class="footer__checkbox-label">
+                                <span class="footer__custom-box" aria-hidden="true">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.47144 6.97149L5.80508 12.4715L14.4714 1.47147" stroke="white" stroke-width="2.94281" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <a href="#" class="footer__checkbox-text">Согласен на обработку персональных данных</a>
+                            </label>
+                        </div>
+                    </form>
+                    <div class="footer__logo">
+                        <img src="assets/image/logo.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="assets/script/script.js"></script>
