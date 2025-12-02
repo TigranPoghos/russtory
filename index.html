@@ -25,17 +25,18 @@
                     <li><button class="header__menu-item">Отзывы</button></li>
                     <li><button class="header__menu-item">Для кого</button></li>
                 </ul>
-                <button class="header__button button"><span>Задать вопрос</span></button>
+                <button data-popup="popup" class="header__button button"><span>Задать вопрос</span></button>
             </div>
         </div>
     </header>
     <main class="main">
+        <div class="opacite"></div>
         <section class="info">
             <div class="container">
                 <div class="info__row row">
                     <div class="info__content">
                         <h1 class="title">Иммерсивные исторические выставки для школ и детских садов</h1>
-                        <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
+                        <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается. По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
                         <button class="button"><span>Получить презентцию программ</span></button>
                     </div>
                     <div class="info__img">
@@ -64,7 +65,42 @@
         </section>
         <section class="about">
             <div class="container">
-                <div class="about__row row"></div>
+                <div class="about__row row">
+                    <div class="about__content">
+                        <h1 class="title">О проекте «Русстори»</h1>
+                        <p class="subtitle">
+                            <b>Краткая миссия:</b> соединяем школу и современные технологии.
+                            <br><br>
+                            <b>Педагог –</b> это сердце образовательного процесса. Он не просто передает информацию, а зажигает искру интереса в глазах учеников. Его роль выходит далеко за рамки урока или лекции.
+                            <br><br>
+                            Без него любая теория остается мертвым грузом.
+                        </p>
+                    </div>
+                    <div class="about__swiper-container">
+                        <div class="about__swiper swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="about__swiper-slide swiper-slide"><img src="assets/image/slider-image.jpg" alt=""></div>
+                                <div class="about__swiper-slide swiper-slide"><img src="assets/image/slider-image.jpg" alt=""></div>
+                                <div class="about__swiper-slide swiper-slide"><img src="assets/image/slider-image.jpg" alt=""></div>
+                                <div class="about__swiper-slide swiper-slide"><img src="assets/image/slider-image.jpg" alt=""></div>
+                                <div class="about__swiper-slide swiper-slide"><img src="assets/image/slider-image.jpg" alt=""></div>
+                                <div class="about__swiper-slide swiper-slide"><img src="assets/image/slider-image.jpg" alt=""></div>
+                            </div>
+                        </div> 
+                        <div class="about__swiper-button">
+                            <button class="about__swiper-next">
+                                <svg width="33" height="19" viewBox="0 0 33 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.5417 9.04163L22.4862 1.54163M30.5417 9.04163L22.4862 16.5416M30.5417 9.04163L1.54175 9.04162" stroke="white" stroke-width="3.08333" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="about__swiper-prev">
+                                <svg width="33" height="19" viewBox="0 0 33 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.54175 9.04163L9.5973 16.5416M1.54175 9.04163L9.5973 1.54163M1.54175 9.04163H30.5417" stroke="white" stroke-width="3.08333" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="show">
@@ -89,7 +125,73 @@
         </section>
         <section class="thanks">
             <div class="container">
-                <div class="thanks__row row"></div>
+                <div class="thanks__row row">
+                    <div class="thanks__swiper swiper docSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="thanks__slide swiper-slide">
+                                <div class="thanks__slide-content">
+                                    <h1 class="title">Благодарность</h1>
+                                    <p class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается. <br><br> По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</p>
+                                </div>
+                                <div class="thanks__slide-image">
+                                    <img src="assets/image/doc.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="thanks__slide swiper-slide">
+                                <div class="thanks__slide-content">
+                                    <h1 class="title">Благодарность</h1>
+                                    <p class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</p>
+                                    <p class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</p>
+                                </div>
+                                <div class="thanks__slide-image">
+                                    <img src="assets/image/doc.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="thanks__slide swiper-slide">
+                                <div class="thanks__slide-content">
+                                    <h1 class="title">Благодарность</h1>
+                                    <p class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</p>
+                                    <p class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</p>
+                                </div>
+                                <div class="thanks__slide-image">
+                                    <img src="assets/image/doc.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="thanks__slide swiper-slide">
+                                <div class="thanks__slide-content">
+                                    <h1 class="title">Благодарность</h1>
+                                    <p class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</p>
+                                    <p class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</p>
+                                </div>
+                                <div class="thanks__slide-image">
+                                    <img src="assets/image/doc.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="thanks__slide swiper-slide">
+                                <div class="thanks__slide-content">
+                                    <h1 class="title">Благодарность</h1>
+                                    <p class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</p>
+                                    <p class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</p>
+                                </div>
+                                <div class="thanks__slide-image">
+                                    <img src="assets/image/doc.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanks__swiper-button">
+                            <button class="thanks__swiper-next">
+                                <svg width="33" height="19" viewBox="0 0 33 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.5417 9.04163L22.4862 1.54163M30.5417 9.04163L22.4862 16.5416M30.5417 9.04163L1.54175 9.04162" stroke="white" stroke-width="3.08333" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="thanks__swiper-prev">
+                                <svg width="33" height="19" viewBox="0 0 33 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.54175 9.04163L9.5973 16.5416M1.54175 9.04163L9.5973 1.54163M1.54175 9.04163H30.5417" stroke="white" stroke-width="3.08333" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="for">
@@ -98,7 +200,7 @@
                     <h1 class="title">Для кого подходят?</h1>
                     <div class="for__content">
                         <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
-                        <button class="button"><span>Связаться с нами</span></button>
+                        <button data-popup="popup" class="button"><span>Связаться с нами</span></button>
                     </div>
                     <div class="for__wrapper">
                         <div class="plus__card">
@@ -118,7 +220,35 @@
             </div>
         </section>
     </main>
-    <div class="popup"></div>
+    <div class="popup">
+        <div class="popup__block">
+            <button class="popup__close">
+                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="45" height="45" rx="22.5" fill="#8F0E08" />
+                    <rect x="1" y="1" width="45" height="45" rx="22.5" stroke="#8F0E08" stroke-width="2" />
+                    <path d="M35.8823 35.9411L23.4412 23.5001M23.4412 23.5001L11 11.0588M23.4412 23.5001L35.8824 11.0588M23.4412 23.5001L11 35.9413" stroke="white" stroke-width="2.76471" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <h1 class="footer__title">Оставить заявку на проведение</h1>
+            <h3 class="footer__subtitle">Ответим на любые интересующие вопросы</h3>
+            <form class="footer__form" action="#">
+                <input type="text" placeholder="Имя" required>
+                <input type="tel" placeholder="+7 (999)-333-33-33" required>
+                <button type="submit"><span>Отправить</span></button>
+                <div class="footer__checkbox-group">
+                    <input class="footer__checkbox-input" type="checkbox" id="subscribe2" required="" checked>
+                    <label for="subscribe2" class="footer__checkbox-label">
+                        <span class="footer__custom-box" aria-hidden="true">
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.47144 6.97149L5.80508 12.4715L14.4714 1.47147" stroke="white" stroke-width="2.94281" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <a href="#" class="footer__checkbox-text">Согласен на обработку персональных данных</a>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer__row row">
@@ -148,11 +278,11 @@
                         </li>
                     </ul>
                     <ul class="footer__contact">
-                        <li><span>ИП: Калинин Георгий Иванович</span></li>
-                        <li><span>Дата регистрации:05.11.2023</span></li>
-                        <li><span>ОГРНИП: 325547600193173</span></li>
-                        <li><span>ИНН: 544600041090</span></li>
-                        <li><span>Код ОКВЭД: 85.41 (дополнительное образование детей и взрослых)</span></li>
+                        <li>ИП: Калинин Георгий Иванович</li>
+                        <li>Дата регистрации:05.11.2023</li>
+                        <li>ОГРНИП: 325547600193173</li>
+                        <li>ИНН: 544600041090</li>
+                        <li>Код ОКВЭД: 85.41 (дополнительное образование детей и взрослых)</li>
                     </ul>
                 </div>
                 <div class="footer__right">
@@ -163,7 +293,7 @@
                         <input type="tel" placeholder="+7 (999)-333-33-33" required>
                         <button type="submit"><span>Отправить</span></button>
                         <div class="footer__checkbox-group">
-                            <input class="footer__checkbox-input" type="checkbox" id="subscribe" required="">
+                            <input class="footer__checkbox-input" type="checkbox" id="subscribe" required="" checked>
                             <label for="subscribe" class="footer__checkbox-label">
                                 <span class="footer__custom-box" aria-hidden="true">
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
