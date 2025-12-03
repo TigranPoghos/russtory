@@ -184,8 +184,12 @@ body {
         gap: 13px;
         align-items: center;
 
-        & img {
+        &-img {
             max-width: 67px;
+        }
+
+        &-text {
+            max-width: 119px;
         }
 
         & p {
@@ -235,7 +239,8 @@ body {
         flex-direction: column;
         padding: 60px;
         border-radius: 20px;
-        min-width: 498px;
+        width: 38%;
+        flex-shrink: 0;
     }
 
     &__social {
@@ -266,6 +271,7 @@ body {
         flex-direction: column;
         gap: 1px;
         max-width: 347px;
+        margin-top: auto;
 
         & li {
             font-family: var(--font-family);
@@ -445,6 +451,8 @@ body {
     &__content {
         padding: 60px 0 97px 60px;
         z-index: 2;
+        display: flex;
+        flex-direction: column;
 
         & h1 {
             line-height: 100%;
@@ -467,6 +475,10 @@ body {
             max-width: 741px;
         }
     }
+
+    & .button {
+        margin-top: auto;
+    }
 }
 
 .plus {
@@ -487,7 +499,8 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 422px;
+        flex: 1 1 calc(33% - 18px);
+        min-width: 300px;
 
         & h3 {
             opacity: 0.9;
@@ -608,6 +621,8 @@ body {
 
     &__row {
         justify-content: space-between;
+        align-items: start;
+        gap: 20px;
     }
 
     &__content {
@@ -615,14 +630,16 @@ body {
         display: flex;
         flex-direction: column;
         max-width: 511px;
+        width: 44%;
     }
 
     &__swiper {
-        max-width: 670px;
+        max-width: 90%;
         margin-right: 68px;
 
         &-container {
             position: relative;
+            width: 56%;
         }
 
         &-slide {
@@ -640,7 +657,7 @@ body {
         &-button {
             position: absolute;
             top: 50%;
-            right: 0;
+            right: -20px;
             z-index: 10;
             transform: translateY(-50%);
             display: flex;
@@ -680,7 +697,8 @@ body {
         &-content {
             display: flex;
             flex-direction: column;
-            max-width: 500px;
+            max-width: 100%;
+            margin-right: 20px;
         
             & h1 {
                 margin-bottom: 50px;
@@ -714,6 +732,372 @@ body {
             height: 60px;
             background: #8f0e08;
             border-radius: 40px;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .info {
+        &__content {
+            padding: 40px 0 60px 40px;
+            width: 40%;
+
+            & .title {
+                font-size: 32px;
+            }
+
+            & .subtitle {
+                font-size: 18px;
+            }
+
+            & h3 {
+                margin: 15px 0;
+                min-height: 150px;
+            }
+        }
+
+        &__img {
+            width: 60%;
+            position: static;
+            margin-top: auto;
+
+            & img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .header {
+        &__menu {
+            gap: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    .thanks {
+        &__slide {
+            padding: 30px 110px 30px 50px;
+        
+            &-content {
+                & h1 {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &-image {
+                & img {
+                    max-width: 300px;
+                }
+            }
+        }
+
+        &__swiper {
+            &-button {
+                right: 30px;
+            }
+        }
+    }
+
+    .show {
+        &__wrapper {
+            & .plus__card {
+                min-height: 250px;
+            }
+        }
+    }
+
+    .footer {
+        &__left {
+            padding: 30px;
+        }
+
+        &__right {
+            padding: 30px;
+        }
+
+        &__row {
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .plus {
+        &__row {
+            gap: 15px;
+        }
+
+        &__card {
+            padding: 20px;
+            gap: 15px;
+            flex: 1 1 calc(33% - 14px);
+        }
+    }
+
+    .header {
+        &__menu {
+            &-item {
+                font-size: 12px;
+            }
+        }
+
+        &__logo {
+            &-img {
+                max-width: 45px;
+            }
+            
+            &-text {
+                max-width: 64px;
+            }
+        }
+    }
+
+    .button {
+        padding: 10px 15px;
+
+        & span {
+            font-size: 12px;
+        }
+    }
+
+    .info {
+        margin-top: 110px;
+
+        &__content {
+            & h3 {
+                min-height: 100px;
+            }
+
+            & .subtitle {
+                font-size: 14px;
+            }
+
+            & .title {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .about {
+        margin-top: 60px;
+
+        &__swiper {
+            &-next, &-prev {
+                width: 35px;
+                height: 35px;
+
+                & svg {
+                    max-width: 18px;
+                }
+            }
+
+            &-button {
+                gap: 5px;
+                right: -10px;
+            }
+        }
+
+        &__content {
+            gap: 15px;
+        }
+    }
+
+    .show {
+        margin-top: 60px;
+
+        &__wrapper {
+            gap: 15px;
+            margin: 20px 0;
+
+            & .plus__card {
+                padding: 20px;
+                min-height: 175px;
+            }
+        }
+    }
+
+    .thanks {
+        margin-top: 60px;
+
+        &__slide {
+            padding: 30px 80px 30px 30px;
+
+            &-image {
+                & img {
+                    max-width: 250px;
+                }
+            }
+        }
+
+        &__swiper {
+            &-button {
+                gap: 5px;
+            }
+
+            &-next, &-prev {
+                width: 35px;
+                height: 35px;
+
+                & svg {
+                    max-width: 18px;
+                }
+            }
+        }
+    }
+
+    .for {
+        &__content {
+            & h3 {
+                max-width: 430px;
+            }
+        }
+    }
+
+    .footer {
+        margin-bottom: 30px;
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__left {
+            padding: 20px;
+        }
+
+        &__right {
+            padding: 20px;
+        }
+
+        &__row {
+            gap: 20px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+        }
+
+        &__social {
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 120px;
+
+            & li {
+                gap: 5px;
+
+                & svg {
+                    max-width: 20px;
+                }
+
+                & a {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &__contact {
+            & li {
+                font-size: 10px;
+            }
+        }
+
+        &__custom {
+            &-box {
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+
+                & svg {
+                    max-width: 10px;
+                }
+            }
+        }
+
+        &__checkbox-group label a {
+            font-size: 14px;
+        }
+
+        &__logo {
+            & img {
+                max-width: 64px;
+            }
+        }
+
+        &__form {
+            gap: 10px;
+            margin-top: 20px;
+
+            & input {
+                padding: 10px 20px;
+            }
+
+            & input:focus, textarea:focus {
+                font-size: 14px;
+            }
+
+            & input, textarea {
+                font-size: 14px;
+            }
+
+            & button {
+                padding: 10px 20px;
+
+                & span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+
+    ::-moz-placeholder {
+        font-size: 14px;
+    }
+
+    :-ms-input-placeholder {
+        font-size: 14px;
+    }
+
+    .popup {
+        max-width: 550px;
+        
+        &__block {
+            padding: 30px;
+        }
+
+        &__close {
+            top: 30px;
+            right: 30px;
+
+            & svg {
+                max-width: 30px;
+            }
         }
     }
 }
