@@ -69,6 +69,11 @@ img, svg {
     border-radius: 40px;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.15), 0 14px 14px 0 rgba(0, 0, 0, 0.13), 0 31px 18px 0 rgba(0, 0, 0, 0.08), 0 55px 22px 0 rgba(0, 0, 0, 0.02), 0 86px 24px 0 rgba(0, 0, 0, 0);
     background: #8f0e08;
+    transition: .6s;
+
+    &:hover {
+        background: rgba($color: #8f0e08, $alpha: .8);
+    }
 
     & span {
         font-family: var(--font-family);
@@ -158,6 +163,22 @@ body {
     top: 0;
     backdrop-filter: blur(3px);
 
+    &__header {
+        background: rgba(0, 0, 0, .5);
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        backdrop-filter: blur(3px);
+
+        &.active {
+            display: block;
+        }
+    }
+
     &.active {
         display: block;
     }
@@ -212,6 +233,11 @@ body {
             font-weight: 500;
             font-size: 16px;
             color: #292929;
+            transition: .4s;
+
+            &:hover {
+                color: #8f0e08;
+            }
         }
     }
 }
@@ -248,7 +274,8 @@ body {
         flex-direction: column;
         gap: 33px;
         margin-top: 50px;
-        margin-bottom: 200px;
+        margin-bottom: 50px;
+        min-height: 355px;
 
         & li {
             display: flex;
@@ -519,8 +546,16 @@ body {
     }
 }
 
+.plus__card.is-hidden {
+    display: none !important;
+}
+
 .show {
     margin-top: 120px;
+
+    &__second {
+        margin-top: 140px;
+    }
 
     &__row {
         flex-direction: column;
@@ -533,6 +568,21 @@ body {
 
         & a {
             margin-left: auto;
+        }
+    }
+
+    &__more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        background: #8f0e08;
+        border-radius: 40px;
+        margin-left: auto;
+
+        &.hidden {
+            display: none !important;
         }
     }
 
@@ -586,15 +636,45 @@ body {
 }
 
 .popup {
-    position: fixed;
-    top: 50%;
-    z-index: 10000;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0 30px;
-    width: 100%;
-    max-width: 762px;
-    display: none;
+    &__popup {
+        position: fixed;
+        top: 50%;
+        z-index: 10000;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 30px;
+        width: 100%;
+        max-width: 762px;
+        display: none;
+        
+        &.active {
+            display: flex;
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__image {
+        margin: 20px 0 32px 0;
+    }
+
+    &__card {
+        position: fixed;
+        top: 50%;
+        z-index: 10000;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 30px;
+        width: 100%;
+        max-width: 762px;
+        display: none;
+
+        &.active {
+            display: flex;
+        }
+    }
 
     &__block {
         background: #fff;
@@ -609,10 +689,6 @@ body {
         right: 60px;
         top: 60px;
         z-index: 10000;
-    }
-
-    &.active {
-        display: flex;
     }
 }
 
@@ -734,6 +810,73 @@ body {
             border-radius: 40px;
         }
     }
+}
+
+.burger {
+    &__button {
+        display: none;
+        z-index: 10000000;
+    }
+
+    &__block {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 9px 9px 0 rgba(0, 0, 0, 0.17), 0 20px 12px 0 rgba(0, 0, 0, 0.1), 0 35px 14px 0 rgba(0, 0, 0, 0.03), 0 55px 15px 0 rgba(0, 0, 0, 0);
+        background: #fbfbfb;
+        padding: 90px 33px 60px 33px;
+        border-radius: 0 0 0 20px;
+        z-index: 1000000;
+
+        &.active {
+            display: flex;
+        }
+    }
+}
+
+#nav-icon1 {
+    width: 38px;
+    height: 38px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    background: #8f0e08;
+    border-radius: 100%;
+}
+#nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 20px;
+    background: #fff;
+    border-radius: 20px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    transition: .25s ease-in-out;
+}
+#nav-icon1 span:nth-child(1) {
+    top: 12px;
+}
+#nav-icon1 span:nth-child(2) {
+    top: 18px;
+}
+#nav-icon1 span:nth-child(3) {
+    top: 24px;
+}
+#nav-icon1.open span:nth-child(1) {
+    top: 18px;
+    transform: translateX(-50%) rotate(135deg);
+}
+#nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+#nav-icon1.open span:nth-child(3) {
+    top: 18px;
+    transform: translateX(-50%) rotate(-135deg);
 }
 
 @media (max-width: 1440px) {
@@ -925,6 +1068,10 @@ body {
     .show {
         margin-top: 60px;
 
+        &__second {
+            margin-top: 110px;
+        }
+
         &__wrapper {
             gap: 15px;
             margin: 20px 0;
@@ -971,6 +1118,10 @@ body {
                 max-width: 430px;
             }
         }
+
+        &__wrapper {
+            gap: 15px;
+        }
     }
 
     .footer {
@@ -999,7 +1150,8 @@ body {
         &__social {
             gap: 15px;
             margin-top: 20px;
-            margin-bottom: 120px;
+            margin-bottom: 50px;
+            min-height: 220px;
 
             & li {
                 gap: 5px;
@@ -1098,6 +1250,262 @@ body {
             & svg {
                 max-width: 30px;
             }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .burger {
+        &__button {
+            display: flex;
+        }
+
+        &__block {
+            & .header__menu {
+                display: flex;
+                flex-direction: column;
+                margin-right: 0;
+                min-width: 188px;
+                justify-content: center;
+                text-align: center;
+
+                & li {
+                    width: 100%;
+
+                    & button {
+                        border-radius: 20px;
+                        padding: 10px 20px;
+                        background: #fff;
+                        color: #8f0e08;
+                        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 9px 9px 0 rgba(0, 0, 0, 0.17), 0 20px 12px 0 rgba(0, 0, 0, 0.1), 0 35px 14px 0 rgba(0, 0, 0, 0.03), 0 55px 15px 0 rgba(0, 0, 0, 0);
+                        width: 100%;
+                    }
+                }
+            }
+
+            & .header__button {
+                display: flex;
+                width: 100%;
+                max-width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+
+    .popup {
+        &__block {
+            padding: 15px;
+        }
+
+        &__close {
+            top: 15px;
+            right: 15px;
+        }
+
+        & .footer__title {
+            max-width: 347px;
+            margin: 0 auto;
+        }
+    }
+
+    .header {
+        &__menu {
+            display: none;
+        }
+
+        &__button {
+            display: none;
+        }
+
+        &__logo {
+            &-img {
+                max-width: 42px;
+            }
+
+            &-text {
+                max-width: 52px;
+            }
+        }
+    }
+
+    .info {
+        &__content {
+            padding: 20px 0 20px 20px;
+            width: 50%;
+
+            & .title {
+                text-align: left;
+            }
+        }
+
+        &__img {
+            width: 50%;
+        }
+    }
+
+    .plus {
+        margin-top: 40px;
+    }
+
+    .about {
+        margin-top: 40px;
+
+        &__row {
+            flex-direction: column;
+        }
+
+        &__content {
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            max-width: none;
+        }
+
+        &__swiper {
+            max-width: 100%;
+            margin-right: 0;
+
+            &-container {
+                width: 100%;
+            }
+
+            &-button {
+                justify-content: center;
+                margin-top: 10px;
+                flex-direction: row-reverse;
+                position: relative;
+                transform: translate(0);
+                top: auto;
+                right: auto;
+                gap: 20px;
+            }
+        }
+    }
+
+    .show {
+        margin-top: 40px;
+    }
+
+    .thanks {
+        margin-top: 40px;
+
+        &__slide {
+            padding: 25px 20px 90px 20px;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            gap: 30px;
+
+            &-image {
+                & img {
+                    max-width: 280px;
+                }
+            }
+
+            &-content {
+                margin-right: 0;
+            }
+        }
+
+        &__swiper {
+            &-button {
+                top: 88%;
+                right: 50%;
+                transform: translateX(50%);
+                flex-direction: row-reverse;
+                gap: 20px;
+            }
+        }
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .for {
+        margin: 40px 0;
+
+        &__content {
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 10px;
+            align-items: center;
+            text-align: center;
+
+            & .button {
+                max-width: 500px;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+
+    .footer {
+        margin-bottom: 20px;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__subtitle {
+            text-align: center;
+        }
+
+        &__logo {
+            margin: 20px auto 0 auto;
+            position: relative;
+            bottom: auto;
+            right: auto;
+        }
+        
+        &__row {
+            flex-direction: column-reverse;
+        }
+
+        &__left {
+            width: 100%;
+        }
+
+        &__social {
+            margin-bottom: 60px;
+            min-height: auto;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .info {
+        &__row {
+            flex-direction: column;
+        }
+
+        &__content {
+            width: 100%;
+            padding: 25px 10px;
+            text-align: center;
+            align-items: center;
+        
+            & h3 {
+                min-height: auto;
+            }
+
+            & .title {
+                text-align: center;
+            }
+
+            & button {
+                width: 100%;
+                max-width: 500px;
+                justify-content: center;
+            }
+        }
+
+        &__img {
+            width: 100%;
         }
     }
 }

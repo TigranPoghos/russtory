@@ -14,32 +14,48 @@
     <header class="header">
         <div class="container">
             <div class="header__row row">
-                <a href="#" class="header__logo">
+                <div class="opacite__header"></div>
+                <a href="#" class="header__logo anim">
                     <img class="header__logo-img" src="assets/image/logo.png" alt="">
                     <img class="header__logo-text" src="assets/image/logo-text.png" alt="">
                 </a>
-                <ul class="header__menu">
-                    <li><button class="header__menu-item">Главная</button></li>
-                    <li><button class="header__menu-item">О проекте</button></li>
-                    <li><button class="header__menu-item">Наши выставки</button></li>
-                    <li><button class="header__menu-item">Отзывы</button></li>
-                    <li><button class="header__menu-item">Для кого</button></li>
+                <ul class="header__menu anim">
+                    <li><button data-scroll="#main" class="header__menu-item">Главная</button></li>
+                    <li><button data-scroll="#about" class="header__menu-item">О проекте</button></li>
+                    <li><button data-scroll="#show" class="header__menu-item">Наши выставки</button></li>
+                    <li><button data-scroll="#thanks" class="header__menu-item">Отзывы</button></li>
+                    <li><button data-scroll="#for" class="header__menu-item">Для кого</button></li>
                 </ul>
-                <button data-popup="popup" class="header__button button"><span>Задать вопрос</span></button>
+                <button data-popup-open="popup" class="anim header__button button"><span>Задать вопрос</span></button>
+                <div id="nav-icon1" class="burger__button anim">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="burger__block">
+                    <ul class="header__menu">
+                        <li><button data-scroll="#main" class="header__menu-item">Главная</button></li>
+                        <li><button data-scroll="#about" class="header__menu-item">О проекте</button></li>
+                        <li><button data-scroll="#show" class="header__menu-item">Наши выставки</button></li>
+                        <li><button data-scroll="#thanks" class="header__menu-item">Отзывы</button></li>
+                        <li><button data-scroll="#for" class="header__menu-item">Для кого</button></li>
+                        <button data-popup-open="popup" class="header__button button"><span>Задать вопрос</span></button>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
     <main class="main">
         <div class="opacite"></div>
-        <section class="info">
+        <section id="main" class="info">
             <div class="container">
                 <div class="info__row row">
                     <div class="info__content">
-                        <h1 class="title">Иммерсивные исторические выставки для школ и детских садов</h1>
-                        <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается.</h3>
-                        <button class="button"><span>Получить презентцию программ</span></button>
+                        <h1 class="title anim">Иммерсивные исторические выставки для школ и детских садов</h1>
+                        <h3 class="subtitle anim">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается.</h3>
+                        <button class="button anim"><span>Получить презентцию программ</span></button>
                     </div>
-                    <div class="info__img">
+                    <div class="info__img anim">
                         <img src="assets/image/info__img.png" alt="">
                     </div>
                 </div>
@@ -48,27 +64,27 @@
         <section class="plus">
             <div class="container">
                 <div class="plus__row row">
-                    <div class="plus__card">
+                    <div class="plus__card anim">
                         <h1 class="plus__title">2017</h1>
                         <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
                     </div>
-                    <div class="plus__card">
+                    <div class="plus__card anim">
                         <h1 class="plus__title">ФГОС</h1>
                         <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
                     </div>
-                    <div class="plus__card">
+                    <div class="plus__card anim">
                         <h1 class="plus__title">+10</h1>
                         <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="container">
                 <div class="about__row row">
                     <div class="about__content">
-                        <h1 class="title">О проекте «Русстори»</h1>
-                        <p class="subtitle">
+                        <h1 class="title anim">О проекте «Русстори»</h1>
+                        <p class="subtitle anim">
                             <b>Краткая миссия:</b> соединяем школу и современные технологии.
                             <br><br>
                             <b>Педагог –</b> это сердце образовательного процесса. Он не просто передает информацию, а зажигает искру интереса в глазах учеников. Его роль выходит далеко за рамки урока или лекции.
@@ -76,7 +92,7 @@
                             Без него любая теория остается мертвым грузом.
                         </p>
                     </div>
-                    <div class="about__swiper-container">
+                    <div class="about__swiper-container anim">
                         <div class="about__swiper swiper mySwiper">
                             <div class="swiper-wrapper">
                                 <div class="about__swiper-slide swiper-slide"><img src="assets/image/slider-image.jpg" alt=""></div>
@@ -103,27 +119,27 @@
                 </div>
             </div>
         </section>
-        <section class="show">
+        <section id="show" class="show">
             <div class="container">
                 <div class="show__row row">
-                    <h1 class="title">Наши выставки</h1>
-                    <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
+                    <h1 class="title anim">Наши выставки</h1>
+                    <h3 class="subtitle anim">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
                     <div class="show__wrapper">
-                        <div class="plus__card">
+                        <div class="plus__card anim">
+                            <button data-popup-open="card" class="button"><span>Подробнее</span></button>
+                        </div>
+                        <div class="plus__card anim">
                             <button class="button"><span>Подробнее</span></button>
                         </div>
-                        <div class="plus__card">
-                            <button class="button"><span>Подробнее</span></button>
-                        </div>
-                        <div class="plus__card">
+                        <div class="plus__card anim">
                             <button class="button"><span>Подробнее</span></button>
                         </div>
                     </div>
-                    <a href="#" class="button"><span>Все выставки</span></a>
+                    <a href="show.html" class="button anim"><span>Все выставки</span></a>
                 </div>
             </div>
         </section>
-        <section class="thanks">
+        <section id="thanks" class="thanks">
             <div class="container">
                 <div class="thanks__row row">
                     <div class="thanks__swiper swiper docSwiper">
@@ -194,24 +210,24 @@
                 </div>
             </div>
         </section>
-        <section class="for">
+        <section id="for" class="for">
             <div class="container">
                 <div class="for__row row">
-                    <h1 class="title">Для кого подходят?</h1>
+                    <h1 class="title anim">Для кого подходят?</h1>
                     <div class="for__content">
-                        <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
-                        <button data-popup="popup" class="button"><span>Связаться с нами</span></button>
+                        <h3 class="subtitle anim">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
+                        <button data-popup-open="popup" class="button"><span>Связаться с нами</span></button>
                     </div>
                     <div class="for__wrapper">
-                        <div class="plus__card">
+                        <div class="plus__card anim">
                             <h1 class="plus__title">2017</h1>
                             <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
                         </div>
-                        <div class="plus__card">
+                        <div class="plus__card anim">
                             <h1 class="plus__title">ФГОС</h1>
                             <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
                         </div>
-                        <div class="plus__card">
+                        <div class="plus__card anim">
                             <h1 class="plus__title">+10</h1>
                             <h3 class="subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</h3>
                         </div>
@@ -220,9 +236,9 @@
             </div>
         </section>
     </main>
-    <div class="popup">
+    <div data-popup-id="popup" class="popup popup__popup">
         <div class="popup__block">
-            <button class="popup__close">
+            <button data-popup-close class="popup__close">
                 <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="1" y="1" width="45" height="45" rx="22.5" fill="#8F0E08" />
                     <rect x="1" y="1" width="45" height="45" rx="22.5" stroke="#8F0E08" stroke-width="2" />
@@ -247,6 +263,22 @@
                     </label>
                 </div>
             </form>
+        </div>
+    </div>
+    <div data-popup-id="card" class="popup__card popup">
+        <div class="popup__block">
+            <button data-popup-close class="popup__close">
+                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="45" height="45" rx="22.5" fill="#8F0E08" />
+                    <rect x="1" y="1" width="45" height="45" rx="22.5" stroke="#8F0E08" stroke-width="2" />
+                    <path d="M35.8823 35.9411L23.4412 23.5001M23.4412 23.5001L11 11.0588M23.4412 23.5001L35.8824 11.0588M23.4412 23.5001L11 35.9413" stroke="white" stroke-width="2.76471" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <h1 class="popup__title title">Планетарий</h1>
+            <div class="popup__image">
+                <img src="assets/image/popup-card.jpg" alt="">
+            </div>
+            <p class="popup__text subtitle">По ФГОС, учебникам, с методической точностью - мы превращаем историю в живой опыт, который запоминается</p>
         </div>
     </div>
     <footer class="footer">
