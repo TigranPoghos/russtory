@@ -546,6 +546,7 @@ body.hidden {
   background: rgba(255, 255, 255, 0.6);
   align-items: center;
   border-radius: 0 0 20px 20px;
+  width: 100%;
 }
 .show__wrapper .plus__card .plus__card-blur .subtitle {
   font-weight: 500;
@@ -929,7 +930,7 @@ body.hidden {
     margin: 20px 0;
   }
   .show__wrapper .plus__card {
-    padding: 20px;
+    padding: 0px;
     min-height: 175px;
   }
   .thanks {
