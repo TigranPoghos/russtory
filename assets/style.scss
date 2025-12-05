@@ -602,7 +602,7 @@ body {
             & .plus__card-blur {
                 gap: 10px;
                 display: flex;
-                padding: 20px;
+                padding: 10px;
                 flex-direction: column;
                 background: rgba($color: #fff, $alpha: 0.6);
                 align-items: center;
@@ -1092,7 +1092,7 @@ body {
 
             & .plus__card {
                 padding: 0px;
-                min-height: 175px;
+                min-height: 200px;
             }
         }
     }
