@@ -783,6 +783,7 @@ body {
         box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.15), 0 14px 14px 0 rgba(0, 0, 0, 0.13), 0 31px 18px 0 rgba(0, 0, 0, 0.08), 0 55px 22px 0 rgba(0, 0, 0, 0.02), 0 86px 24px 0 rgba(0, 0, 0, 0);
         padding: 60px 175px 60px 100px;
         justify-content: space-between;
+        min-height: 692px;
 
         &-content {
             display: flex;
@@ -942,6 +943,7 @@ body {
     .thanks {
         &__slide {
             padding: 30px 110px 30px 50px;
+            min-height: 490px;
         
             &-content {
                 & h1 {
@@ -1102,6 +1104,7 @@ body {
 
         &__slide {
             padding: 30px 80px 30px 30px;
+            min-height: 420px;
 
             &-image {
                 & img {
@@ -1425,6 +1428,7 @@ body {
             text-align: center;
             align-items: center;
             gap: 30px;
+            min-height: 684px;
 
             &-image {
                 & img {
